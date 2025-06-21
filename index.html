@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEY VA | Responsive Support for Modern Business</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'brand-blue': '#0A2540',
+                        'brand-teal': '#00A99D',
+                        'brand-light': '#F8F9FA',
+                        'brand-gray': '#495057',
+                        'brand-accent': '#32CD32' // Lime Green accent for CTAs
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Small style adjustments for better look and feel */
+        body {
+            font-family: 'inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'poppins', sans-serif;
+        }
+        .hero-bg {
+            background-color: #F8F9FA;
+            background-image: radial-gradient(#E0E0E0 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-white text-brand-gray">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-brand-blue">
+                HEY<span class="text-brand-accent">VA</span>.
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#services" class="hover:text-brand-teal transition-colors">Services</a>
+                <a href="#how-it-works" class="hover:text-brand-teal transition-colors">How It Works</a>
+                <a href="#pricing" class="hover:text-brand-teal transition-colors">Pricing</a>
+                <a href="#contact" class="hover:text-brand-teal transition-colors">Contact</a>
+            </nav>
+            
+            <!-- CTA Button -->
+            <a href="#pricing" class="hidden md:inline-block bg-brand-blue text-white font-semibold py-2 px-6 rounded-lg hover:bg-opacity-90 transition-all shadow-md">
+                Get Started
+            </a>
+
+            <!-- Mobile Menu Button (optional, for future enhancement) -->
+            <button class="md:hidden text-brand-blue">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg pt-32 pb-20 text-center">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-bold text-brand-blue leading-tight mb-4">
+                    Feeling Overwhelmed? <span class="text-brand-accent">Just say HEY.</span>
+                </h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-brand-gray">
+                    We provide fast, reliable, and tech-savvy virtual assistance for busy entrepreneurs and startups, so you can stop worrying about daily tasks and start focusing on growth.
+                </p>
+                <a href="#pricing" class="bg-brand-accent text-white font-bold py-4 px-10 rounded-lg text-lg hover:opacity-90 transition-all shadow-lg">
+                    Delegate Your First Task
+                </a>
+                <p class="mt-4 text-sm text-gray-500">Trusted by founders and creators worldwide.</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-blue">How We Can Help</h2>
+                    <p class="text-lg max-w-2xl mx-auto mt-2 text-brand-gray">From your inbox to your biggest projects, we've got you covered.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-brand-light p-8 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+                        <div class="bg-brand-accent text-white rounded-full h-12 w-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue mb-2">Administrative Support</h3>
+                        <p class="text-brand-gray">Calendar management, email organization, travel booking, and data entry.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-brand-light p-8 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+                        <div class="bg-brand-accent text-white rounded-full h-12 w-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue mb-2">Marketing & Social Media</h3>
+                        <p class="text-brand-gray">Content scheduling, basic graphic creation, community engagement, and reporting.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-brand-light p-8 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+                         <div class="bg-brand-accent text-white rounded-full h-12 w-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue mb-2">Technical Assistance</h3>
+                        <p class="text-brand-gray">WordPress updates, CRM management, webinar support, and system automation.</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="bg-brand-light p-8 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+                        <div class="bg-brand-accent text-white rounded-full h-12 w-12 flex items-center justify-center mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue mb-2">Executive Tasks</h3>
+                        <p class="text-brand-gray">Market research, presentation design, project coordination, and client follow-ups.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20 bg-brand-light">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-blue">Getting Started is Simple</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                    <!-- Step 1 -->
+                    <div>
+                        <div class="bg-brand-accent text-white rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+                        <h3 class="text-2xl font-bold text-brand-blue mb-2">Pick a Plan</h3>
+                        <p>Choose a monthly plan that fits your needs. No long-term contracts, cancel anytime.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div>
+                        <div class="bg-brand-accent text-white rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+                        <h3 class="text-2xl font-bold text-brand-blue mb-2">Meet Your VA</h3>
+                        <p>We'll match you with a dedicated VA and set up a kick-off call to understand your business.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div>
+                        <div class="bg-brand-accent text-white rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+                        <h3 class="text-2xl font-bold text-brand-blue mb-2">Start Delegating</h3>
+                        <p>Begin assigning tasks via your preferred method—email, Slack, or our dashboard—and watch your productivity soar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-blue">Flexible Plans for Every Stage</h2>
+                    <p class="text-lg max-w-2xl mx-auto mt-2 text-brand-gray">Invest in your time. It's your most valuable asset.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Pricing Tier 1 -->
+                    <div class="border border-gray-200 rounded-lg p-8 flex flex-col">
+                        <h3 class="text-2xl font-bold text-brand-blue">Launch</h3>
+                        <p class="text-brand-gray mb-4">For those just getting started.</p>
+                        <p class="text-4xl font-bold text-brand-blue mb-4">$399<span class="text-lg font-normal text-brand-gray">/mo</span></p>
+                        <ul class="space-y-3 mb-8 text-brand-gray flex-grow">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>10 Hours/Month</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Dedicated VA</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Daily Updates</li>
+                        </ul>
+                        <a href="#contact" class="w-full text-center bg-white border-2 border-brand-accent text-brand-accent font-semibold py-3 px-6 rounded-lg hover:bg-brand-accent hover:text-white transition-all">Choose Plan</a>
+                    </div>
+                    <!-- Pricing Tier 2 (Most Popular) -->
+                    <div class="border-2 border-brand-accent rounded-lg p-8 flex flex-col shadow-2xl relative">
+                        <p class="absolute top-0 -translate-y-1/2 bg-brand-accent text-white px-4 py-1 rounded-full font-semibold text-sm">Most Popular</p>
+                        <h3 class="text-2xl font-bold text-brand-blue">Growth</h3>
+                        <p class="text-brand-gray mb-4">For businesses ready to scale.</p>
+                        <p class="text-4xl font-bold text-brand-blue mb-4">$699<span class="text-lg font-normal text-brand-gray">/mo</span></p>
+                        <ul class="space-y-3 mb-8 text-brand-gray flex-grow">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>20 Hours/Month</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Dedicated VA</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Daily Updates</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Priority Support</li>
+                        </ul>
+                        <a href="#contact" class="w-full text-center bg-brand-accent text-white font-semibold py-3 px-6 rounded-lg hover:opacity-90 transition-all">Choose Plan</a>
+                    </div>
+                    <!-- Pricing Tier 3 -->
+                    <div class="border border-gray-200 rounded-lg p-8 flex flex-col">
+                        <h3 class="text-2xl font-bold text-brand-blue">Scale</h3>
+                        <p class="text-brand-gray mb-4">For established teams.</p>
+                        <p class="text-4xl font-bold text-brand-blue mb-4">$1299<span class="text-lg font-normal text-brand-gray">/mo</span></p>
+                        <ul class="space-y-3 mb-8 text-brand-gray flex-grow">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>40 Hours/Month</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Dedicated VA</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Weekly Strategy Call</li>
+                        </ul>
+                        <a href="#contact" class="w-full text-center bg-white border-2 border-brand-accent text-brand-accent font-semibold py-3 px-6 rounded-lg hover:bg-brand-accent hover:text-white transition-all">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section id="contact" class="bg-brand-blue text-white">
+            <div class="container mx-auto px-6 py-20 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Reclaim Your Time?</h2>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-300">
+                    Let's build a more productive future for your business, together. Book a free, no-obligation consultation call to see how HEY VA can help you.
+                </p>
+                <a href="#" class="bg-brand-accent text-white font-bold py-4 px-10 rounded-lg text-lg hover:opacity-90 transition-all shadow-lg">
+                    Book a Free Consultation
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-light">
+        <div class="container mx-auto px-6 py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-bold text-brand-blue">
+                        HEY<span class="text-brand-accent">VA</span>.
+                    </a>
+                    <p class="mt-2 text-brand-gray">Responsive Support for Modern Business.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h2 class="mb-4 font-bold text-brand-blue uppercase">Services</h2>
+                        <ul class="text-brand-gray space-y-2">
+                            <li><a href="#" class="hover:text-brand-teal">Admin Support</a></li>
+                            <li><a href="#" class="hover:text-brand-teal">Marketing</a></li>
+                            <li><a href="#" class="hover:text-brand-teal">Tech Assist</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-4 font-bold text-brand-blue uppercase">Company</h2>
+                        <ul class="text-brand-gray space-y-2">
+                            <li><a href="#" class="hover:text-brand-teal">About Us</a></li>
+                            <li><a href="#" class="hover:text-brand-teal">Careers</a></li>
+                            <li><a href="#" class="hover:text-brand-teal">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-4 font-bold text-brand-blue uppercase">Legal</h2>
+                        <ul class="text-brand-gray space-y-2">
+                            <li><a href="#" class="hover:text-brand-teal">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-brand-teal">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-300">
+            <div class="text-center text-brand-gray">
+                &copy; <span id="year"></span> HEY VA. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set the current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
